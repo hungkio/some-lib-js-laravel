@@ -24,8 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $googleDriveStorage = Storage::disk('google_drive');
-        $googleDriveStorage->put('test.txt', 'Hello world');
+//        $googleDriveStorage = Storage::disk('google_drive');
+//        $googleDriveStorage->put('test.txt', 'Hello world');
+//        $googleDriveStorage->put('test.txt', File::get($path_file));
         return view('home');
     }
 }
